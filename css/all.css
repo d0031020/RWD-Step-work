@@ -182,6 +182,15 @@ table {
     box-shadow: 1px 1px 20px #ADADF5;
 }
 
+@media(max-width:769px) {
+    .box1 {
+        width: 100%;
+    }
+    .box2 {
+        display: none;
+    }
+}
+
 .box3 {
     display: block;
     width: 0px;
@@ -211,7 +220,7 @@ table {
 }
 
 .swiper-container {
-    width: 1000px;
+    width: 100%;
     height: 300px;
     position: absolute;
     top: 10px;
@@ -267,7 +276,7 @@ table {
     position: absolute;
     top: 20px;
     right: -500px;
-    width: 210px;
+    width: 310px;
     padding-top: 0px;
     margin-top: 10px;
     background-color: #fff;
@@ -276,14 +285,14 @@ table {
 }
 
 .list ul li {
-    width: 180px;
+    width: 280px;
     height: 50px;
     border-bottom: 1px solid lightgrey;
     text-align: left;
 }
 
 .list ul li a {
-    margin-left: 10px;
+    margin-left: 20px;
     line-height: 50px;
 }
 
@@ -300,6 +309,34 @@ table {
     text-decoration: none;
     color: black;
     position: relative;
+}
+
+#point {
+    display: none;
+}
+
+@media(max-width:769px) {
+    #point {
+        display: block;
+    }
+    .top .menu {
+        width: 100%;
+        position: relative;
+        float: none;
+    }
+    .list {
+        position: relative;
+        width: 100%;
+    }
+    .top .menu>ul>li {
+        width: 40%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+    .list ul {
+        width: 40%;
+    }
 }
 
 .logo {
@@ -359,17 +396,22 @@ table {
 }
 
 .html {
-    width: 250px;
-    height: 350px;
+    width: 25.46666%;
+    height: 400px;
     box-shadow: 2px 2px 5px gray;
     padding: 10px;
-    margin-left: 35px;
+    margin-left: 4%;
     line-height: 25px;
     float: left;
+    position: relative;
 }
 
 .html img {
-    margin-left: 58px;
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 25%;
+    position: absolute;
+    top: 5%;
 }
 
 .html h1 {
@@ -377,20 +419,51 @@ table {
     font-size: 18px;
 }
 
+.html h2 {
+    padding: 5px;
+}
+
+.html span {
+    position: absolute;
+    top: 40%;
+}
+
+@media(max-width:769px) {
+    .html {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .html img {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .html span {
+        top: 55%;
+    }
+}
+
 .rwd {
-    width: 250px;
-    height: 350px;
+    width: 25.46666%;
+    height: 400px;
     box-shadow: 2px 2px 5px gray;
     padding: 10px;
-    margin-left: 60px;
+    margin-left: 4.3%;
+    margin-right: 3.7%;
     line-height: 25px;
     float: left;
+    position: relative;
 }
 
 .rwd img {
-    margin-left: 15px;
-    margin-top: 24px;
-    margin-bottom: 27px;
+    width: 60%;
+    margin-left: 17%;
+    margin-right: 23%;
+    position: absolute;
+    top: 15%;
 }
 
 .rwd h1 {
@@ -398,42 +471,111 @@ table {
     font-size: 18px;
 }
 
+.rwd h2 {
+    padding: 5px;
+}
+
+.rwd span {
+    position: absolute;
+    top: 40%;
+}
+
+@media(max-width:769px) {
+    .rwd {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .rwd img {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .rwd span {
+        top: 55%;
+    }
+}
+
 .jquery {
-    width: 250px;
-    height: 350px;
+    width: 25.46666%;
+    height: 400px;
     box-shadow: 2px 2px 5px gray;
     padding: 10px;
-    margin-right: 35px;
+    margin-right: 4%;
     line-height: 25px;
     float: right;
+    position: relative;
 }
 
 .jquery img {
-    margin-left: 67px;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 25%;
+    position: absolute;
+    top: 5%;
 }
 
 .jquery h1 {
     text-align: center;
     font-size: 18px;
-    margin-bottom: 5px;
 }
 
 .jquery h2 {
-    margin-left: 10px;
+    padding: 15px;
 }
 
-.jquery ul {
-    margin-left: 25px;
-    list-style-type: disc;
+.jquery h2 ul {
+    margin-left: 20px;
+    list-style-type: inherit;
+}
+
+.jquery span {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.jquery span span {
+    margin-top: -25px;
+    margin-left: 20px;
+}
+
+@media(max-width:769px) {
+    .jquery {
+        width: 80%;
+        margin-left: 13%;
+        margin-right: 7%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .jquery img {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .jquery span {
+        top: 55%;
+    }
+    .jquery li {
+        float: left;
+        width: 50%;
+    }
+    .jquery span span {
+        text-align: center;
+        margin-top: -20px;
+        margin-left: -2px;
+    }
 }
 
 
 /* 以上是skill的部分 */
 
 .table {
-    margin-top: 90px;
+    width: 100%;
+    margin-top: 50px;
 }
 
 .table h1 {
@@ -443,9 +585,9 @@ table {
 }
 
 .table table {
-    width: 800px;
+    width: 80%;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 10%;
     line-height: 50px;
 }
 
@@ -455,7 +597,7 @@ td {
     border-bottom: 1px solid lightgray;
 }
 
-span {
+table span {
     color: #00cc99;
 }
 
@@ -463,7 +605,7 @@ span {
 /* 以上是table的內容 */
 
 .form {
-    width: 1000px;
+    width: 100%;
     height: 500px;
     background-image: url('https://upload.cc/i1/2020/01/19/FlKrQT.png');
     margin-top: 50px;
@@ -508,6 +650,25 @@ form input {
     margin-left: 340px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px gray;
+}
+
+@media(max-width:769px) {
+    .form textarea {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .form form {
+        width: 100%;
+        margin-left: 10%;
+    }
+    .form form input {
+        width: 60%;
+    }
+    #button {
+        margin-left: 70%;
+        margin-top: -10%;
+    }
 }
 
 
