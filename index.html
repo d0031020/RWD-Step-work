@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Final Work</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="icon" type='img/x-icon' href="https://img.icons8.com/color/48/000000/devpost.png">
+</head>
+
+<body>
+    <div class="body">
+        <div class="up"><img src="https://img.icons8.com/bubbles/100/000000/up.png" width="80px"></div>
+        <div class="wrap">
+            <div class="header">
+                <div class="top">
+                    <div class="menu">
+                        <ul class='list'>
+                            <li><a href="＃">首頁</a></li>
+                            <li><a id='click' href="＃">產品介紹 <img src="https://img.icons8.com/material-rounded/24/000000/down-squared.png" width="15px"></a>
+                                <ul id='dropdown'>
+                                    <li><a href="#">HTML5教學</a></li>
+                                    <li><a href="#">響應式網站設計</a></li>
+                                    <li><a href="#">Jquery實戰教學</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="＃">聯絡我們</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <a href="#"><img src="https://upload.cc/i1/2020/01/19/PXO7zF.png" alt="無法顯示"></a>
+                    </div>
+                    <div class="app">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="https://img.icons8.com/carbon-copy/100/000000/facebook-new.png" alt="無法顯示" width="30px">粉絲團</a>
+                            </li>
+                            <li>
+                                <a href="＃"><img src="https://img.icons8.com/carbon-copy/100/000000/twitter.png" alt="無法顯示" width="30px">追隨我們</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://upload.cc/i1/2020/01/19/LYfvCR.png" alt=""></div>
+                        <div class="swiper-slide"><img src="https://upload.cc/i1/2020/01/19/olY2PU.png" alt=""></div>
+                        <div class="swiper-slide"><img src="https://upload.cc/i1/2020/01/19/NcsMre.png" alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- <div class="slogan">
+        </div>
+        <h1>六角學院<br>讓你奠定良好的前端基礎</h1> -->
+            </div>
+            <div class="clearfix"></div>
+            <div class="main">
+                <div class="skill">
+                    <div class="html">
+                        <a href="https://upload.cc/i1/2020/01/19/Wqt2Li.jpg" data-lightbox='html'><img src="https://upload.cc/i1/2019/12/25/4tMvIT.png
+            " alt="無法顯示"></a><br>
+                        <h1><b>HTML5 基礎教學</b></h1>
+                        <h2>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</h2>
+                    </div>
+                    <div class="rwd">
+                        <a href="https://upload.cc/i1/2020/01/19/KzhBGR.jpg" data-lightbox="rwd"><img src="https://upload.cc/i1/2019/12/25/6miCSZ.png" alt="無法顯示"></a><br>
+                        <h1><b>響應式網站設計</b></h1>
+                        <h2>響應式網站設計(Responsive web desgin)，目前大多數使用者均是以手機瀏覽的情況下，響應式網站已是必備的。六角學院將會提供業界響應式開發方法，讓讓學生了解行動版開發技巧。</h2>
+                    </div>
+                    <div class="jquery">
+                        <a href="https://upload.cc/i1/2020/01/19/ZGOep3.jpg" data-lightbox="jquery"><img src="https://upload.cc/i1/2019/12/25/pUMu04.png" alt="無法顯示"></a><br>
+                        <h1><b>Jquery實戰教學</b></h1>
+                        <h2>本課程有以下特色<br>
+                            <ul>
+                                <li>了解變數的使用方法</li>
+                                <li>學習並操作DOM</li>
+                                <li>學習基本數學運算方法</li>
+                                <li>套件的操作及應用</li>
+                            </ul>
+                        </h2>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="table">
+                    <h1>線上及實體課程的差異</h1>
+                    <table>
+                        <tr>
+                            <th>項目</th>
+                            <th>Hex School 線上課程</th>
+                            <th>一般線上課程</th>
+                            <th>實體課程</th>
+                        </tr>
+                        <tr>
+                            <td>費用</td>
+                            <td><span>較低</span></td>
+                            <td><span>較低</span></td>
+                            <td>較高</td>
+                        </tr>
+                        <tr>
+                            <td>學習效果</td>
+                            <td>一般</td>
+                            <td><span>較低</span></td>
+                            <td><span>很好</span></td>
+                        </tr>
+                        <tr>
+                            <td>Code review</td>
+                            <td><span>有</span></td>
+                            <td>無</td>
+                            <td>不一定</td>
+                        </tr>
+                        <tr>
+                            <td>課程更新速度</td>
+                            <td><span>普通</span></td>
+                            <td><span>普通</span></td>
+                            <td>較慢</td>
+                        </tr>
+                        <tr>
+                            <td>多次複習</td>
+                            <td><span>可</span></td>
+                            <td>可</td>
+                            <td>不可</td>
+                        </tr>
+                        <tr>
+                            <td>字幕</td>
+                            <td><span>有</span></td>
+                            <td>不一定</td>
+                            <td>板書</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form">
+                    <h1>對我們的課程有興趣嗎？<br>歡迎留下您的資料</h1>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" id="name" placeholder="Name"><br>
+                        <input type="tel" name="tel" id="tel" placeholder="Phone number"><br>
+                        <input type="email" name="mail" id="mail" placeholder="E-mail"><br>
+                        <button class="button-warning pure-button" id='button'>SEND</button>
+                        <br>
+                    </form>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <footer>
+                <div class="footlogo">
+                    <img src="https://upload.cc/i1/2020/01/19/PXO7zF.png" alt="無法顯示">
+                </div>
+                <div class="tel">
+                    <h2>聯絡我們：<span id='mail'>hexschool@gmail.com</span></h2>
+                    <h2>電話：<span id='tel'>0999123456</span></h2>
+                </div>
+            </footer>
+        </div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+
+</html>
