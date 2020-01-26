@@ -129,12 +129,17 @@
         border-spacing: 0;
     }
     
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
     .clearfix {
         clear: both;
     }
     
     .body {
-        max-width: 1280px;
+        max-width: 100%;
         position: relative;
         width: auto;
         overflow: hidden;
@@ -230,6 +235,7 @@
         height: 300px;
         position: absolute;
         top: 10px;
+        z-index: 0;
     }
     
     .swiper-slide {
@@ -266,6 +272,9 @@
         .banner {
             display: block;
         }
+        .banner img {
+            width: 100%;
+        }
     }
     
     .top {
@@ -298,30 +307,27 @@
     .list ul {
         position: absolute;
         top: 20px;
-        right: -500px;
-        width: 310px;
+        width: 140px;
         padding-top: 0px;
         margin-top: 10px;
         background-color: #fff;
         transition: all 1s;
         z-index: 50;
+        display: none;
+        box-shadow: 2px 2px 5px gray;
     }
     
     .list ul li {
-        width: 280px;
+        width: 140px;
         height: 50px;
         border-bottom: 1px solid lightgrey;
         text-align: left;
     }
     
     .list ul li a {
-        margin-left: 20px;
+        font-size: 16px;
         line-height: 50px;
-    }
-    
-    .top .list li:hover ul {
-        top: 20px;
-        right: 0;
+        margin-left: 10px;
     }
     
     .top .menu a:hover {
@@ -359,6 +365,10 @@
         }
         .list ul {
             width: 40%;
+        }
+        .list ul li {
+            text-align: center;
+            width: 100%;
         }
     }
     
@@ -413,7 +423,6 @@
     
     .skill {
         height: 350px;
-        margin-top: 30px;
     }
     
     @media(max-width:376px) {
@@ -694,7 +703,9 @@
     /* 以上是table的內容 */
     
     .form {
-        width: 100%;
+        width: 1000px;
+        /* margin-right: 5%;
+        margin-left: 5%; */
         height: 500px;
         background-image: url('https://upload.cc/i1/2020/01/19/FlKrQT.png');
         margin-top: 50px;
